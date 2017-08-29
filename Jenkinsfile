@@ -10,7 +10,8 @@ pipeline {
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                echo 'Testing wiht mocha..'
+i               sh './node_modules/mocha/bin/mocha ./test/t*.*'
             }
         }
         stage('Deploy') {
