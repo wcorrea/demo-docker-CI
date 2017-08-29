@@ -1,3 +1,4 @@
+#!groovy
 pipeline {
     agent any
 
@@ -11,7 +12,7 @@ pipeline {
         stage('Test') {
             steps {
                 echo 'Testing wiht mocha..'
-i               sh './node_modules/mocha/bin/mocha ./test/t*.*'
+                sh './node_modules/mocha/bin/mocha ./test/t*.*'
             }
         }
         stage('Deploy') {
