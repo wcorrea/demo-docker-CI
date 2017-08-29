@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "description": "Demo app for Pluralsight Docker CI course",
   "main": "app.js",
-   "repository": {
+  "repository": {
     "type": "git",
     "url": "https://github.com/wcorrea/demo-docker-CI"
   },
@@ -14,6 +14,7 @@
     "express": "3.2.4",
     "jade": "1.11.0",
     "mocha": "1.20.1",
+    "pug": "^2.0.0-rc.3",
     "supertest": "1.1.0"
   }
 }

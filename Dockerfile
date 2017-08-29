@@ -12,12 +12,13 @@ RUN yum install -y npm
 WORKDIR /usr/src/app
 
 # Copy app to /src
-COPY package.json       /usr/src/app
-COPY package-lock.json  /usr/src/app
+#COPY package.json       /usr/src/app
+#COPY package-lock.json  /usr/src/app
+COPY . .
 
 # Install app and dependencies into /src
 RUN npm install
 
-EXPOSE 8080
+EXPOSE 8090
 
-CMD cd /src && node ./app.js
+CMD cd /usr/src/app && node ./app.js
