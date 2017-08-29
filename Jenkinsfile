@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-        #        echo 'Testing wiht mocha..'
+//                echo 'Testing wiht mocha..'
                 sh './node_modules/mocha/bin/mocha ./test/t*.*'
             }
         }
