@@ -5,7 +5,7 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-		sh 'sudo docker build - < Dockerfile'
+                sh 'docker build -t my-nodejs-app .'
             }
         }
         stage('Test') {

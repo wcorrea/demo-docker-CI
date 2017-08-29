@@ -1,9 +1,13 @@
 {
   "name": "hello-pluralsighters",
   "private": true,
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Demo app for Pluralsight Docker CI course",
   "main": "app.js",
+   "repository": {
+    "type": "git",
+    "url": "https://github.com/wcorrea/demo-docker-CI"
+  },
   "author": "Nigel Poulton <nigelpoulton@hotmail.com>",
   "license": "You'd have to be mad to use this in production :-D",
   "dependencies": {
