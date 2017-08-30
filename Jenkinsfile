@@ -18,7 +18,10 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying....'
+            docker.withRegistry("${env.DOCKER_HUB_TRIGGER}") {
+            app.push("latest")
             }
         }
     }
 }
+
